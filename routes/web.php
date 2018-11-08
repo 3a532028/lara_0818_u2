@@ -19,3 +19,5 @@ Route::get('/home', function () {
     return view('home.index');
 });
 
+Route::get('/hollo/{name?}', ['as'=>'hello.index','uses'=>'HelloController@index']);
+
